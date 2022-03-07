@@ -228,7 +228,9 @@
 
 
 /* ----- FOR MOBILE DEVICES ----- */
-@media (max-width:375px){
+@media (max-width:767px) and 
+    (min-width:375px)
+{
     /* ======= HOME PAGE ======= */
      .container{
          padding: 0 2.4rem;
@@ -357,19 +359,28 @@
          justify-content: center;
      }
      .footer-left{
-         flex-direction: column;
-         gap: 2.4rem;
-         text-align: center;
+        flex-direction: column;
+        gap: 2.4rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
      }
+     .footer-left .footer-logo{
+        gap: 2.4rem;
+    }
      .footer-logo .nav-list{
-         display: block;
+        display: block;
      }
      .footer-icons{
          justify-content: center;
          margin-bottom: 1.6rem;
      }
+     .footer-call{
+        text-align: center;
+    }
      .footer-right{
          text-align: center;
+         flex-direction: column;
      }
      /* =============== ABOUT PAGE ===================== */
      /* ----- ABOUT ----- */
@@ -421,9 +432,14 @@
          line-height: 3.2rem;
      }
      .clients-content{
-         flex-wrap: wrap;
-         gap: 5.6rem;
+        width: 32.7rem;
+        flex-wrap: wrap;
+        gap: 5.6rem;
      }
+     .clients-img img{
+        width: auto;
+        height: auto;
+    }
      /* =============== CONTACT PAGE ===================== */
      .bg-contact{
          padding-top: 16rem;
