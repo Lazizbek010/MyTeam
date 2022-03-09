@@ -91,10 +91,10 @@ h3{
     line-height: 2.8rem;
 }
 .container{
-    max-width: 113rem;
+    max-width: 116rem;
     width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 25px;
 }
 .btn{
     padding: 0.9rem 3.2rem;
@@ -699,10 +699,10 @@ h3{
 }
 .contact{
     display: flex;
-    gap: 3rem;
+    justify-content: space-between;
 }
 .contact-left, .contact-right{
-    width: 50%;
+    width: 47%;
 }
 .contact-left h1{
     font-size: 6.4rem;
@@ -721,7 +721,7 @@ h3{
     border-radius: 0.8rem;
 }
 .contact-left-content:hover{
-    transform: scale(1.1, 1.1) translateX(-2rem);
+    transform: scale(1.1, 1.1);
     box-shadow: 0 0 1.5rem 0.1rem var(--box-shadow-color);
 }
 .contact-left-content:hover .left-content-img img{
