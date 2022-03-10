@@ -1,18 +1,29 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* ----- FOR MINI DESKTOP DEVICES ----- */
- @media(max-width:1159px){
+@media(max-width:1159px){
     .container{
         padding: 0 3.2rem;
     }
     .testimonial-content{
-        flex-wrap: wrap;
-        justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
     .testimonial-item{
         width: 45%;
     }
     .directors-content{
         gap: 7.6rem 1.1rem;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .directors-item{
         width: 80%;
@@ -43,7 +54,10 @@
         background-size: 35.8rem auto;
     }
     .hero-content{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         text-align: center;
     }
     .hero-left{
@@ -71,7 +85,10 @@
         background-position: top right;
     }
     .feature-content{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .feature-left hr{
         margin-bottom: 3.2rem;
@@ -101,7 +118,8 @@
     }
     .testimonial-content{
         margin-top: 4.8rem;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .testimonial-item{
         width: 100%;
@@ -127,32 +145,47 @@
         padding: 5.6rem 0;
     }
     .footer-content{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         gap: 3.2rem;
     }
     .footer-left{
         width: 100%;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .footer-left .footer-logo{
-        flex-direction: column;
-        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         gap: 5.3rem;
     }
     .footer-logo .nav-list ul{
         gap: 2.4rem;
-        align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
     }
     .footer-call{
         text-align: end;
     }
     .footer-right{
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .footer-icons{
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         margin-bottom: 0;
     }
     /* =============== ABOUT PAGE ===================== */
@@ -163,7 +196,10 @@
         background-position: right bottom;
     }
     .about-content{
-        flex-direction: column; 
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; 
         text-align: center;
     }
     .about-left h1{
@@ -196,7 +232,9 @@
     .directors-content{
         gap: 7.6rem 1.1rem;
         grid-template-columns: repeat(auto-fit, minmax(28.1rem, 1fr));
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .directors-item{
         width: 28.1rem;
@@ -227,7 +265,8 @@
         padding-bottom: 11.2rem;
     }
     .contact{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         gap: 6.4rem;
     }
     .contact-left{
@@ -276,7 +315,10 @@
          background-size: auto auto;
      }
      .hero-content{
-         flex-direction: column;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
          text-align: center;
      }
      .hero-left, .hero-right{
@@ -297,7 +339,10 @@
          background-position: right top;
      }
      .feature-content{
-         flex-direction: column;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
      }
      .feature-left, .feature-right{
          width: 100%;
@@ -314,7 +359,8 @@
          padding-top: 5.6rem;
      }
      .feature-right-item{
-         flex-wrap: wrap;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
          gap: 1.6rem;
          text-align: center;
      }
@@ -340,13 +386,15 @@
      }   
      .testimonial-content{
          margin-top: 4.8rem;
-         flex-wrap: wrap;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
      }
      .testimonial-item{
          width: 100%;
      }
      .testimonial-item:hover .testimonial-item-img{
-        transform: rotateY(360deg) scale(1.5);
+        -webkit-transform: rotateY(360deg) scale(1.5);
+                transform: rotateY(360deg) scale(1.5);
     }
      .testimonial-item:not(:last-child){
         margin-bottom: 4.8rem;
@@ -364,9 +412,12 @@
      }
      .started-content{
          width: 100%;
-         flex-wrap: wrap;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
          gap: 2.4rem;
-         justify-content: center;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
      }
      .started-content h2{
          font-size: 3.2rem;
@@ -379,11 +430,17 @@
      .footer-content{
          gap: 4rem;
          /* flex-wrap: nowrap; */
-         flex-direction: column;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
          /* justify-content: center; */
      }
      .footer-left{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 2.4rem;
         /* text-align: center; */
         /* justify-content: center; */
@@ -396,7 +453,9 @@
         display: block;
      }
      .footer-icons{
-         justify-content: center;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
          margin-bottom: 1.6rem;
      }
      .footer-call{
@@ -414,7 +473,10 @@
          background-position: right bottom -10rem;
      }
      .about-content{
-         flex-direction: column;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
          gap: 1.6rem;
      }
      .about-left, .about-right{
@@ -459,8 +521,11 @@
         width: 80%;
         margin: 0 auto;
         gap: 5.6rem;
-        flex-wrap: wrap;
-        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
      }
      .clients-img{
         width: auto;
@@ -478,7 +543,8 @@
          background-position: bottom -11.5rem right -1rem;
      }
      .contact{
-         flex-wrap: wrap;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
          gap: 5.6rem;
      }
      .contact-left, .contact-right{
@@ -529,7 +595,10 @@
          background-size: auto auto;
      }
      .hero-content{
-         flex-direction: column;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
          text-align: center;
      }
      .hero-left, .hero-right{
@@ -550,7 +619,10 @@
          background-position: right top;
      }
      .feature-content{
-         flex-direction: column;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
      }
      .feature-left, .feature-right{
          width: 100%;
@@ -567,12 +639,15 @@
          padding-top: 5.4rem;
      }
      .feature-right-item{
-         flex-wrap: wrap;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
          gap: 1.6rem;
          text-align: center;
      }
      .feature-right-item:hover{
-        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+            -ms-transform: scale(1, 1);
+                transform: scale(1, 1);
     }
      .feature-right-item:not(:last-child){
          margin-bottom: 4.5rem;
@@ -596,13 +671,15 @@
      }   
      .testimonial-content{
          margin-top: 4.5rem;
-         flex-wrap: wrap;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
      }
      .testimonial-item{
          width: 100%;
      }
      .testimonial-item:hover .testimonial-item-img{
-        transform: rotateY(360deg) scale(1.5);
+        -webkit-transform: rotateY(360deg) scale(1.5);
+                transform: rotateY(360deg) scale(1.5);
     }
      .testimonial-item:not(:last-child){
         margin-bottom: 4rem;
@@ -620,9 +697,12 @@
      }
      .started-content{
          width: 100%;
-         flex-wrap: wrap;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
          gap: 2.4rem;
-         justify-content: center;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
      }
      .started-content h2{
          font-size: 3.2rem;
@@ -635,11 +715,17 @@
      .footer-content{
          gap: 4rem;
          /* flex-wrap: nowrap; */
-         flex-direction: column;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
          /* justify-content: center; */
      }
      .footer-left{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 2.4rem;
         /* text-align: center; */
         /* justify-content: center; */
@@ -652,7 +738,9 @@
         display: block;
      }
      .footer-icons{
-         justify-content: center;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
          margin-bottom: 1.6rem;
      }
      .footer-call{
@@ -670,7 +758,10 @@
          background-position: right bottom -10rem;
      }
      .about-content{
-         flex-direction: column;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
          gap: 1.6rem;
      }
      .about-left, .about-right{
@@ -704,7 +795,9 @@
          width: 30rem;
      }
      .directors-item:hover{
-        transform: scale(1, 1) translateY(0);
+        -webkit-transform: scale(1, 1) translateY(0);
+            -ms-transform: scale(1, 1) translateY(0);
+                transform: scale(1, 1) translateY(0);
     }
      /* ----- CLIENTS ----- */
      .clients{
@@ -719,8 +812,11 @@
         width: 80%;
         margin: 0 auto;
         gap: 5.6rem;
-        flex-wrap: wrap;
-        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
      }
      .clients-img{
         width: auto;
@@ -738,7 +834,8 @@
          background-position: bottom -11.5rem right -1rem;
      }
      .contact{
-         flex-wrap: wrap;
+         -ms-flex-wrap: wrap;
+             flex-wrap: wrap;
          gap: 5.6rem;
      }
      .contact-left, .contact-right{
@@ -757,7 +854,9 @@
          width: 100%;
      }
      .contact-left-content:hover{
-        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+            -ms-transform: scale(1, 1);
+                transform: scale(1, 1);
     }
      .contact-left-content:not(:last-child){
          margin-bottom: 2.4rem;
@@ -766,5 +865,4 @@
          width: 70%;/* width: 23.2rem = 70%; */
      }
 }
-
 
