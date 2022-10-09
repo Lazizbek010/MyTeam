@@ -16,3 +16,12 @@ function closeNav(){
     resNav.classList.remove("showNav")
     bgResNav.style.display = "none"
 }
+
+window.addEventListener('scroll', ()=>{
+    if(window.scrollY > 190){
+        console.log(window.scrollY);
+        document.querySelector('.navbar').classList.add('sticky-navbar')
+    }else{
+        document.querySelector('.navbar').classList.remove('sticky-navbar')
+    }
+})
